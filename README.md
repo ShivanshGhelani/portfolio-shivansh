@@ -1,12 +1,12 @@
-# Portfolio Website
+# My Portfolio Website
 
-A modern, interactive portfolio website built with FastAPI, HTML, CSS, and JavaScript.
+A personal portfolio showcasing my projects and skills in Python development, AI/ML, and Robotics. This modern, interactive website is built with FastAPI, HTML, CSS, and JavaScript.
 
 ## Features
 
 - Responsive design with elegant UI/UX
 - Interactive neural network background animation
-- Project showcase with categorized filtering
+- Project showcase with categorized filtering (AI/ML, Robotics, Computer Vision)
 - Easy navigation between profile and project pages
 - Interactive animations and transitions
 
@@ -24,6 +24,23 @@ A modern, interactive portfolio website built with FastAPI, HTML, CSS, and JavaS
 - `templates/` - HTML templates for the website
 - `static/` - CSS, JavaScript, images, and other static assets
 - `portfolio/` - Python virtual environment
+
+## Projects Highlighted
+
+- **Robotics Projects**:
+  - Line Follower Robot with PID control
+  - 4WD Rover with voice command recognition
+  
+- **AI/ML Projects**:
+  - Myra AI Assistant - AI chatbot powered by Groq LLM
+  - Speech Recognition system
+  - Neural TTS (Text-to-Speech) system
+  - Translation Service
+  - Stock Price Predictor (academic project)
+  
+- **Computer Vision Projects**:
+  - Smart OCR System with text extraction and processing
+  - VIOR - Specialized document processing system
 
 ## Local Development
 
@@ -49,8 +66,23 @@ This project is deployed on Vercel for easy hosting and global distribution.
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Feel free to connect with me for collaborations or questions!
+
+- **Email**: shivanshghelani@gmail.com
+- **LinkedIn**: [Shivansh Ghelani](https://www.linkedin.com/in/shivansh-ghelani)
+- **GitHub**: [ShivanshGhelani](https://github.com/ShivanshGhelani)
+- **Portfolio**: [myra.vercel.app](https://myra.vercel.app)
 
 ## Author
 
 Shivansh Ghelani - Portfolio showcasing Python, AI/ML, and Robotics projects
+
+---
+
+<div align="center">
+Made with ❤️ by Shivansh Ghelani
+</div>
