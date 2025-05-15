@@ -76,7 +76,7 @@ Feel free to connect with me for collaborations or questions!
 - **Email**: shivanshghelani@gmail.com
 - **LinkedIn**: [Shivansh Ghelani](https://www.linkedin.com/in/shivansh-ghelani)
 - **GitHub**: [ShivanshGhelani](https://github.com/ShivanshGhelani)
-- **Portfolio**: [myra.vercel.app](portfolio-shivansh-tau.vercel.app)
+- **Portfolio**: [myra.vercel.app](https://portfolio-shivansh-dev.vercel.app/)
 
 ## Author
 
