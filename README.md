@@ -76,7 +76,8 @@ Feel free to connect with me for collaborations or questions!
 - **Email**: shivanshghelani@gmail.com
 - **LinkedIn**: [Shivansh Ghelani](https://www.linkedin.com/in/shivansh-ghelani)
 - **GitHub**: [ShivanshGhelani](https://github.com/ShivanshGhelani)
-- **Portfolio**: [myra.vercel.app](https://portfolio-shivansh-dev.vercel.app/)
+- **Portfolio**: [Shivansh-Portfolio](https://portfolio-shivansh-dev.vercel.app/)
+- **Phone no.**: +91 8980811621
 
 ## Author
 
