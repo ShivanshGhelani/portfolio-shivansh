@@ -158,15 +158,16 @@
                                 <span class="skill-tag">Matplotlib</span>
                                 <span class="skill-tag">Seaborn</span>
                             </div>
-                            <div class="code-snippet" style="margin-top: 1rem;"># Data Analysis & API Development
-                                import pandas as pd
-                                import numpy as np
-                                from fastapi import FastAPI
+                            <div class="code-snippet" style="margin-top: 1rem;">
+# Data Analysis & API Development
+import pandas as pd
+import numpy as np
+from fastapi import FastAPI
 
-                                df = pd.read_csv('data.csv')
-                                results = df.groupby('category').agg({
-                                'value': ['mean', 'std']
-                                })
+df = pd.read_csv('data.csv')
+results = df.groupby('category').agg({
+'value': ['mean', 'std']
+})
                             </div>
                         </div>
                         <div class="animated-skill-card">
@@ -177,13 +178,14 @@
                                 <span class="skill-tag">TensorFlow</span>
                                 <span class="skill-tag">Neural Networks</span>
                             </div>
-                            <div class="code-snippet" style="margin-top: 1rem;"># Deep Learning Model
-                                class NeuralNet(nn.Module):
-                                def __init__(self):
-                                super().__init__()
-                                self.conv1 = nn.Conv2d(3, 64, 3)
-                                self.pool = nn.MaxPool2d(2, 2)
-                                self.fc1 = nn.Linear(64, 10)
+                            <div class="code-snippet" style="margin-top: 1rem;">
+# Deep Learning Model
+class NeuralNet(nn.Module):
+def __init__(self):
+super().__init__()
+self.conv1 = nn.Conv2d(3, 64, 3)
+self.pool = nn.MaxPool2d(2, 2)
+self.fc1 = nn.Linear(64, 10)
                             </div>
                         </div>
                         <div class="animated-skill-card">
@@ -195,16 +197,17 @@
                                 <span class="skill-tag">Control Systems</span>
                                 <span class="skill-tag">Signal Systems</span>
                             </div>
-                            <div class="code-snippet" style="margin-top: 1rem;">// Embedded Control System
-                                void setup() {
-                                pinMode(MOTOR_PIN, OUTPUT);
-                                setupPID();
-                                }
+                            <div class="code-snippet" style="margin-top: 1rem;">
+// Embedded Control System
+void setup() {
+pinMode(MOTOR_PIN, OUTPUT);
+setupPID();
+}
 
-                                void loop() {
-                                readSensors();
-                                updateControl();
-                                }
+void loop() {
+readSensors();
+updateControl();
+}
                             </div>
                         </div>
                     </div>
@@ -485,37 +488,35 @@
                             </div>
                         </div>
                     </div> <!-- Udemy Certifications Section -->
-                    <div class="highlight-box" style="margin-top: 2rem;">
-                        <h3 style="color: var(--accent); margin-bottom: 1rem;">Udemy Certifications</h3>
-                        <div class="certs-grid">
-                            <!-- Udemy Certificate with image -->
-                            <div class="certification-badge"
-                                onclick="openCertModal('udemy-flask', 'Python with Flask', 'Complete Web Development with Flask', '/static/images/certificates/Python_Flask.jpg')">
-                                <div class="cert-img-container">
-                                    <img src="/static/images/certificates/Python_Flask.jpg"
-                                        alt="Python with Flask Certificate">
-                                </div>
-                                <div class="cert-content">
-                                    <h4 style="color: var(--accent);">Python with Flask</h4>
-                                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Web Development
-                                        Framework</p>
-                                    <span class="view-cert-btn">View Certificate</span>
-                                </div>
+                    <h3 style="color: var(--accent); margin-bottom: 1rem;">Udemy Certifications</h3>
+                    <div class="certs-grid">
+                        <!-- Udemy Certificate with image -->
+                        <div class="certification-badge"
+                            onclick="openCertModal('udemy-flask', 'Python with Flask', 'Complete Web Development with Flask', '/static/images/certificates/Python_Flask.jpg')">
+                            <div class="cert-img-container">
+                                <img src="/static/images/certificates/Python_Flask.jpg"
+                                    alt="Python with Flask Certificate">
                             </div>
+                            <div class="cert-content">
+                                <h4 style="color: var(--accent);">Python with Flask</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Web Development
+                                    Framework</p>
+                                <span class="view-cert-btn">View Certificate</span>
+                            </div>
+                        </div>
 
-                            <!-- Udemy Certificate with image -->
-                            <div class="certification-badge"
-                                onclick="openCertModal('udemy-fastapi', 'Python with FastAPI', 'Modern API Development with FastAPI', '/static/images/certificates/Python_DS_ML.jpg')">
-                                <div class="cert-img-container">
-                                    <img src="/static/images/certificates/Python_DS_ML.jpg"
-                                        alt="Python with FastAPI Certificate">
-                                </div>
-                                <div class="cert-content">
-                                    <h4 style="color: var(--accent);">Python with Data Science & Machine Learning</h4>
-                                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Modern API Development
-                                    </p>
-                                    <span class="view-cert-btn">View Certificate</span>
-                                </div>
+                        <!-- Udemy Certificate with image -->
+                        <div class="certification-badge"
+                            onclick="openCertModal('udemy-fastapi', 'Python with FastAPI', 'Modern API Development with FastAPI', '/static/images/certificates/Python_DS_ML.jpg')">
+                            <div class="cert-img-container">
+                                <img src="/static/images/certificates/Python_DS_ML.jpg"
+                                    a   lt="Python with FastAPI Certificate">
+                            </div>
+                            <div class="cert-content">
+                                <h4 style="color: var(--accent);">Python with Data Science & Machine Learning</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Modern API Development
+                                </p>
+                                <span class="view-cert-btn">View Certificate</span>
                             </div>
                         </div>
                     </div>
