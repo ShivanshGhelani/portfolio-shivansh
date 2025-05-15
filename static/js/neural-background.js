@@ -32,12 +32,12 @@
             this.startAnimation();
             this.addEventListeners();
         }
-        
-        setupCanvas() {
+          setupCanvas() {
             const updateSize = () => {
                 const dpr = window.devicePixelRatio || 1;
-                const rect = this.canvas.getBoundingClientRect();
+                const rect = document.documentElement.getBoundingClientRect();
                 
+                // Use full document height instead of viewport
                 this.canvas.width = rect.width * dpr;
                 this.canvas.height = rect.height * dpr;
                 this.canvas.style.width = rect.width + 'px';
@@ -47,6 +47,22 @@
             };
             
             updateSize();
+
+            // Update on resize and content changes
+            const resizeObserver = new ResizeObserver(() => {
+                if (this.resizeTimeout) {
+                    clearTimeout(this.resizeTimeout);
+                }
+                this.resizeTimeout = setTimeout(() => {
+                    updateSize();
+                    this.createNodes();
+                }, 250);
+            });
+
+            // Observe both body and html for size changes
+            resizeObserver.observe(document.body);
+            resizeObserver.observe(document.documentElement);
+
             window.addEventListener('resize', () => {
                 if (this.resizeTimeout) {
                     clearTimeout(this.resizeTimeout);
@@ -57,15 +73,18 @@
                 }, 250);
             });
         }
-        
-        createNodes() {
-            const count = Math.min(50, Math.floor((this.canvas.width * this.canvas.height) / 20000));
+          createNodes() {
+            // Adjust node density based on screen size
+            const density = Math.min(this.canvas.width, this.canvas.height) > 1000 ? 25000 : 20000;
+            const count = Math.min(40, Math.floor((this.canvas.width * this.canvas.height) / density));
+            
+            // Clear existing nodes
             this.nodes = Array.from({ length: count }, () => ({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
-                vx: (Math.random() - 0.5) * 2,
-                vy: (Math.random() - 0.5) * 2,
-                radius: Math.random() * 2 + 1
+                vx: (Math.random() - 0.5) * 1.5, // Slightly slower movement
+                vy: (Math.random() - 0.5) * 1.5,
+                radius: Math.random() * 1.5 + 0.5 // Slightly smaller nodes
             }));
         }
         

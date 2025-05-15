@@ -1,9 +1,10 @@
-# Python related
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -19,22 +20,55 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
 
 # Virtual Environment
-portfolio/
 venv/
 ENV/
 env/
+.venv/
+portfolio/
 
-# Environment variables
-.env
-
-# IDE related
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-
-# OS related
 .DS_Store
-Thumbs.db
+
+# FastAPI specific
+.env
+settings.json
+*.log
+logs/
+
+# Database
+*.sqlite3
+*.db
+
+# Docker
+.docker/
+
+# Node (for frontend if included)
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+yarn-debug.log
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnp.*
+
+# Other common
+.local/
+.history/
+.cache/
+temp/
+tmp/
