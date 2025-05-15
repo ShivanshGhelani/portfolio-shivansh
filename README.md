@@ -28,17 +28,18 @@ A personal portfolio showcasing my projects and skills in Python development, AI
 ## Projects Highlighted
 
 - **Robotics Projects**:
+
   - Line Follower Robot with PID control
   - 4WD Rover with voice command recognition
-  
 - **AI/ML Projects**:
+
   - Myra AI Assistant - AI chatbot powered by Groq LLM
   - Speech Recognition system
   - Neural TTS (Text-to-Speech) system
   - Translation Service
   - Stock Price Predictor (academic project)
-  
 - **Computer Vision Projects**:
+
   - Smart OCR System with text extraction and processing
   - VIOR - Specialized document processing system
 
@@ -72,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to connect with me for collaborations or questions!
 
-- **Email**: shivanshghelani@gmail.com
+- **Email**: : shivansh.ghelani@icloud.com
 - **LinkedIn**: [Shivansh Ghelani](https://www.linkedin.com/in/shivansh-ghelani)
 - **GitHub**: [ShivanshGhelani](https://github.com/ShivanshGhelani)
 - **Portfolio**: [myra.vercel.app](https://myra.vercel.app)
