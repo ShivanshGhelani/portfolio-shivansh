@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Myra - Projects Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/projects.css">
+</head>
+
+<body>
+    <div class="neural-background">
+        <canvas id="neural-canvas"></canvas>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="title-container">
+                <h1>Python & Robotics</h1>
+                <p class="subtitle">Hello! I'm an aspiring robotics developer exploring the exciting world of AI and
+                    automation. Join me as I share my learning journey and projects in Python development.</p>
+                <div class="header-features">
+                    <div class="feature">
+                        <i class="fas fa-robot"></i>
+                        <span>Robotics Enthusiast</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fab fa-python"></i>
+                        <span>Python Developer</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Fresh Innovator</span>
+                    </div>
+                    <a href="/" class="feature"
+                        style="text-decoration: none; background: rgba(99, 102, 241, 0.1); padding: 8px 16px; border-radius: 12px; transition: all 0.3s ease;">
+                        <i class="fas fa-user-circle"></i>
+                        <span>View Profile</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="category-tabs">
+            <div class="category-tab active" data-category="all">
+                <i class="fas fa-th-large"></i>
+                <span>All Projects</span>
+            </div>
+            <div class="category-tab" data-category="ai-ml">
+                <i class="fas fa-brain"></i>
+                <span>Python (AI/ML)</span>
+            </div>
+            <div class="category-tab" data-category="robotics">
+                <i class="fas fa-robot"></i>
+                <span>Robotics</span>
+            </div>
+            <div class="category-tab" data-category="computer-vision">
+                <i class="fas fa-eye"></i>
+                <span>Computer Vision</span>
+            </div>
+        </div>
+
+        <div class="services">
+            <div class="service" style="--delay: 6" data-category="robotics">
+                <div class="icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <h3 class="service-title">Line Follower</h3>
+                <p class="service-desc">Arduino-based line following robot implementation using PID control algorithm
+                    for smooth path tracking and precise navigation.</p>
+                <a href="https://github.com/ShivanshGhelani/myra-linefollower.git" class="service-link">
+                    View Code
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service" style="--delay: 6" data-category="robotics">
+                <div class="icon">
+                    <i class="fas fa-truck-monster"></i>
+                </div>
+                <h3 class="service-title">4WD Rover</h3>
+                <p class="service-desc">Versatile 4WD robotic rover featuring manual control, voice command recognition,
+                    and semi-autonomous navigation capabilities built with Esp32/Python/Embedded systems.</p>
+                <a href="https://github.com/ShivanshGhelani/Myra-Rover.git" class="service-link">
+                    View Code
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- <div class="service" style="--delay: 6" data-category="robotics">
+                <div class="icon">
+                    <i class="fas fa-helicopter"></i>
+                </div>
+                <h3 class="service-title">Quadcopter</h3>
+                <p class="service-desc">Custom-built quadcopter drone with flight stabilization system, autonomous navigation capabilities, and real-time telemetry using Arduino flight controller, IMU sensors, and wireless communication modules.</p>
+                <a href="/myra-uav" class="service-link">
+                    View Code
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div> -->
+            <div class="service" style="--delay: 2" data-category="ai-ml">
+                <div class="icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="service-title">Myra AI Assistant</h3>
+                <p class="service-desc">A versatile AI chatbot powered by Groq LLM, featuring text summarization, translation, and basic self-learning capabilities. Built with pre-defined language models for efficient natural language understanding and processing.</p>
+                <a href="https://myra-chatbot.vercel.app" class="service-link">
+                    Try Myra
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- <div class="service" style="--delay: 2" data-category="ai-ml">
+                <div class="icon">
+                    <i class="fas fa-assistive-listening-systems"></i>
+                </div>
+                <h3 class="service-title">Voice Assistant</h3>
+                <p class="service-desc">An intelligent voice assistant that responds to spoken commands, controls smart devices, and answers questions using natural language understanding.</p>
+                <a href="/voice-assistant" class="service-link">
+                    Try Assistant
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div> -->
+            <div class="service" style="--delay: 3" data-category="ai-ml">
+                <div class="icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3 class="service-title">Speech Recognition</h3>
+                <p class="service-desc">A speech recognition project that converts spoken words into text with high accuracy using AI/ML</p>
+                <a href="https://myra-sst.vercel.app" class="service-link">
+                    See Demo
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service" style="--delay: 4" data-category="ai-ml">
+                <div class="icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h3 class="service-title">Neural TTS</h3>
+                <p class="service-desc">Text-to-Speech system with automatic language detection, male/female voice options, and distinctly robotic voice characteristics for specialized applications.</p>
+                <a href="https://myra-tts.vercel.app" class="service-link">
+                    Listen Demo
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service" style="--delay: 1" data-category="ai-ml">
+                <div class="icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3 class="service-title">Translation service</h3>
+                <p class="service-desc">Neural machine translation system that provides  translations across
+                    multiple languages with context awareness.</p>
+                <a href="https://myra-translator.vercel.app" class="service-link">
+                    View Project
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="service" style="--delay: 1" data-category="ai-ml">
+                <div class="icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="service-title">Stock Close Price Predictor</h3>
+                <p class="service-desc">Early-stage academic project exploring stock price prediction using basic
+                    machine learning techniques. Simple prototype that offers experimental forecasts based on historical
+                    data. </p>
+                    <p class="service-desc">(For learning purposes only - not intended for financial decisions)</p>
+                    <p class="service-desc">NOTE: The Demo uses free tier deployment there might not work for working check github repository</p>
+                <a href="https://stock-pricepredictor.onrender.com" class="service-link">
+                    View Project
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>                <div class="service" style="--delay: 1" data-category="computer-vision">
+                <div class="icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="service-title">Smart OCR System</h3>
+                <p class="service-desc">OCR system that extracts and processes text from typed images. Features include text summarization for long paragraphs and multi-language translation capabilities. Optimized for typed content for now handwritten text work in progress.</p>
+                <p class="service-desc">NOTE: The Demo uses free tier deployment there might not work for working check github repository</p>
+                <div class="service-links" style="display: flex; gap: 10px;">
+                    <a href="https://github.com/ShivanshGhelani/myra-ocr.git" class="service-link">
+                        Explore Project
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://myra-ocr.onrender.com" class="service-link">
+                        Try Demo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="service" style="--delay: 5" data-category="computer-vision">
+                <div class="icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3 class="service-title">VIOR</h3>
+                <p class="service-desc">Specialized document processing system that handles complex layouts and
+                    formatting with high precision.
+                    <p class="service-desc">NOTE: The Demo uses free tier deployment there might not work for working check github repository</p>
+                </p>                <div class="service-links" style="display: flex; gap: 10px;">
+                    <a href="https://github.com/ShivanshGhelani/vior.git" class="service-link">
+                        Explore Project
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://myra-vior.onrender.com" class="service-link">
+                        Try Demo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="service" style="--delay: 6" data-category="computer-vision">
+                <div class="icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h3 class="service-title">License Plate Recognition</h3>
+                <p class="service-desc">Automated license plate recognition system that uses computer vision and deep
+                    learning to detect, extract, and recognize license plate characters from images and video streams in
+                    various conditions.</p>
+                <a href="/lpr-core" class="service-link">
+                    View Code
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div> -->
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2025 Myra - Building Tomorrow's Tech</p>
+        </footer>
+    </div>
+    <!-- JavaScript files -->
+    <script src="/static/js/simple-categories.js"></script>
+    <script src="/static/js/neural-background.js"></script>
+</body>
+
+</html>

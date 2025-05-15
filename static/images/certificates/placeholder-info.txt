@@ -1,0 +1,23 @@
+Certificate Image Placeholders
+
+This folder will store certificate images for the portfolio.
+
+For now, the website is using URL-based placeholder images:
+- https://via.placeholder.com/800x600?text=Certificate+Name
+
+Current placeholder files:
+- mission-chandra-1.jpg (Competition Certificate)
+- mission-chandra-2.jpg (Award Ceremony)
+- science-fair-2024.jpg (Science Fair 2024 Project)
+- science-fair-2025.jpg (Science Fair 2025 Project)
+- xenesis-community-1.jpg (Stage Community Head 2023)
+- xenesis-community-2.jpg (Stage Community Head 2024)
+- xenesis-coordinator.jpg (Event Coordinator Certificate)
+
+To use your actual certificates:
+1. Save your certificate images in this folder with the same names as the placeholders
+2. The images should be high-resolution but keep file size reasonable (compress if needed)
+3. Recommended aspect ratio: 4:3 or 16:9 for consistent display
+
+Example path to use in the HTML:
+/static/images/certificates/your-certificate.jpg
